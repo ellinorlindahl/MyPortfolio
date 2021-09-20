@@ -1,0 +1,12 @@
+body {
+
+    background-color: gainsboro ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
+a.active {
+
+    text-decoration: underline;
+}
