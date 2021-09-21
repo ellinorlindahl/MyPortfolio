@@ -1,7 +1,7 @@
 body {
 
     background-color:gainsboro;
-    background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg");
+    /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); */
     background-size: 100%;
     
     font-family: fontsMontserrat;
@@ -51,6 +51,15 @@ footer {
 .footer {
     font-size: x-small;
 }
+
+
+
+h2 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+
 
 /**SPECIFICALLY THE ABOUT PAGE**/
 
