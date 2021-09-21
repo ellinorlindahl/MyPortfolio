@@ -1,15 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
 
     background-color:gainsboro;
     /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); */
     background-size: 100%;
-    
     font-family: fontsMontserrat;
 }
 
 nav {
     display: block;
-    float: none;
+float: none;
   text-align: right;
   padding: 2%;
   font-size: 18px;
@@ -31,10 +35,6 @@ a {
     font-family: fontsMontserratBold;
   }
 
-  a.socmedLink:hover {
-    text-decoration: underline;
-  }
-  
 
 main {
     padding: 15% 0 0 5%;
@@ -59,6 +59,28 @@ h2 {
     text-align: center;
 }
 
+hr { 
+    max-width: 20%;
+    height: 0px;
+    border: none;
+    border-top: 1px solid grey;
+   
+}
+
+button {
+border: none; 
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: fontsMontserrat;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+}
 
 
 /**SPECIFICALLY THE ABOUT PAGE**/
@@ -74,7 +96,7 @@ img.face {
 /**SPECIFICALLY THE CV PAGE**/
 
 #cvTable {
-    width: 100%;
+    width: 95%;
     margin: 2%;
     text-align: left;
     background: 50%;
@@ -102,8 +124,10 @@ img.face {
     text-align: center;
 }
 
+
   .galleryItem:hover {
-    border: 1px solid #777;
+    background-color: white;
+    color: gray;
   }
   
 
