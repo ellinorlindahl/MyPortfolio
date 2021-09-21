@@ -1,8 +1,9 @@
 body {
 
-    background-color: gainsboro ;
+    background-color:gainsboro;
     background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg");
     background-size: 100%;
+    
     font-family: fontsMontserrat;
 }
 
@@ -40,7 +41,15 @@ main {
 }
 
 footer {
-    float: bottom;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    
+}
+
+.footer {
+    font-size: x-small;
 }
 
 /**SPECIFICALLY THE ABOUT PAGE**/
@@ -49,8 +58,7 @@ img.face {
     margin: 3%;
     max-width: 200px;
     float: left;
-    border-radius: 100%;
-    border-style: fade;
+   
 }
 
 
@@ -72,6 +80,23 @@ img.face {
 .tableHead {
     font-family: fontsMontserratBold;
 }
+
+
+/**SPECIFICALLY THE PROJECTS PAGE**/
+
+.projectsGallery {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+  }
+  
+.galleyItem {
+    text-align: center;
+}
+
+  .galleryItem:hover {
+    border: 1px solid #777;
+  }
+  
 
 /**LIST OF FONTS**/
 
