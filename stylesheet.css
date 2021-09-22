@@ -68,34 +68,46 @@ hr {
    
 }
 
-button {
-border: none; 
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  font-family: fontsMontserrat;
-  position: left;
+
+/**SPECIFICALLY THE ABOUT PAGE**/
+
+.flex-container {
+    margin: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
+
+img.face {
+    max-width: 200px;
+}
+
+ul {
+    margin-left: 4%;
+list-style-type: square;
+}
+
+.buttons {
+    margin: 4%;
+    display: flex;
+    align-content: center;
+}
+
+button {
+    border: none; 
+      padding: 15px 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: fontsMontserrat;
+    }
 
 button:hover {
     background-color: gray;
     color: white;
 }
 
-
-
-.whoAmI {
-    display: flexbox;
-}
-
-
-/**SPECIFICALLY THE ABOUT PAGE**/
-
-img.face {
-    margin: 1%;
-    max-width: 200px;
+p {
+    margin: 0% 4%;
 }
 
 .cvTable {
