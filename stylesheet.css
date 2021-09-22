@@ -41,15 +41,16 @@ main {
 }
 
 footer {
-    position: fixed;
+    position: relative;
+    margin-bottom: 3px;
     width: 100%;
-    bottom: 10px;
     text-align: center;
     
 }
 
 .footer {
     font-size: x-small;
+
 }
 
 
@@ -75,6 +76,7 @@ border: none;
   display: inline-block;
   font-size: 1rem;
   font-family: fontsMontserrat;
+  position: left;
 }
 
 button:hover {
@@ -83,26 +85,27 @@ button:hover {
 }
 
 
-/**SPECIFICALLY THE ABOUT PAGE**/
 
-img.face {
-    margin: 3%;
-    max-width: 200px;
-    float: left;
-   
+.whoAmI {
+    display: flexbox;
 }
 
 
-/**SPECIFICALLY THE CV PAGE**/
+/**SPECIFICALLY THE ABOUT PAGE**/
 
-#cvTable {
+img.face {
+    margin: 1%;
+    max-width: 200px;
+}
+
+.cvTable {
     width: 95%;
     margin: 2%;
     text-align: left;
     background: 50%;
 }
 
-#cvTable td, #cvTable th {
+.cvTable td, #cvTable th {
     padding: 2%;
     min-width: 200px;
   }
