@@ -127,30 +127,41 @@
 
             <div class="projectsGallery">
                 <div class="galleryItem">
-                    <img src="style/img/genericUXworkPic.jpg" alt="Picture of UX workshop">
-                    <div class="galleryText">PriceRunner Internship | 2021</div>
+                    <img src="style/img/Pricerunner.jpeg" alt="Pricerunner logo" class="hover-shadow">
+                    <div class="galleryText">PriceRunner | 2021 | Internship</div>
                 </div>
 
                 <div class="galleryItem">
-                    <img onclick="" src="style/img/emptyMockupframe.jpg" alt="Picture of mockup">
-                    <div class="galleryText">Arbetsförmedlingen | 2020</div>
+                    <img onclick="" src="style/img/emptyMockupframe.jpg" alt="Picture of mockup" class="hover-shadow">
+                    <div class="galleryText">Arbetsförmedlingen | 2020 | School group project</div>
                 </div>
 
                 <div class="galleryItem">
-                    <img onclick="" src="style/img/frisq/frisq2.png" alt="Picture from FRISQ project">
-                    <div class="galleryText">FRISQ | 2020</div>
+                    <img id="myBtn3" onclick="" src="style/img/frisq/FRISQfront.png" alt="Picture from FRISQ project"
+                        class="hover-shadow">
+                    <div class="galleryText">FRISQ | 2020 | School group project</div>
                 </div>
 
                 <div class="galleryItem">
-                    <img onclick="" src="style/img/ab/ab1.png" alt="Picture from Aftonbladet project">
-                    <div class="galleryText">Aftonbladet x Gen Z</div>
+                    <img onclick="" src="style/img/ab/AB+GENZ.png" alt="Picture from Aftonbladet project"
+                        class="hover-shadow">
+                    <div class="galleryText">Aftonbladet x Gen Z | 2020 | School group project</div>
                 </div>
-
 
             </div>
 
         </div>
 
+        <!-- The Modal för FRISQ -->
+        <div id="frisqModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Här ska det stå massa info om projektet!!</p>
+            </div>
+        </div>
+        <!-- END of The Modal -->
 
 
         <div class="contactMe">
@@ -163,26 +174,26 @@
 
                     <form class="contactform" name="contactform" method="post" action="#">
                         <fieldset>
-                            <legend>Hello,</legend>
+                            <legend>Direct message</legend>
                             <br />
-                            <label for="message"><i class="material-icons" style="font-size:16px"></i></label>
-                            <input type="text" id="message" name="message"
-                                placeholder="What's on your mind?"><br /><br /><br />
-                            <label for="name"><i class="material-icons" style="font-size:16px">Name</i></label>
-                            <input type="text" id="name" name="name" placeholder="Your name.."><br /><br />
-                            <label for="company"><i class="material-icons" style="font-size:16px">Company</i></label>
-                            <input type="text" id="company" name="company" placeholder="Company.."><br /><br />
-                            <label for="email"><i class="material-icons" style="font-size:16px">Email</i></label>
-                            <input type="text" id="email" name="email" placeholder="Email address.."><br />
-                            <br /><br />
-                            <button>Send</button>
+
+                            <label for="name"><i>Name</i></label><br />
+                            <input type="text" id="name" name="name" placeholder="Enter name.."><br />
+                            <label for="email"><i>Email</i></label><br />
+                            <input type="text" id="email" name="email" placeholder="Enter email address.."><br /><br />
+                            <label for="subject"><i>Subject</i></label><br />
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject.."><br />
+                            <label for="message"><i>What's on your mind?</i></label><br />
+                            <input type="text" id="message" name="message" placeholder="Write something.."><br /><br />
+                            <button id="formButton">Send</button>
                         </fieldset>
                     </form>
                 </div>
 
                 <div class="contactBox2">
 
-                    <p>This section is not done. The form does not work, and everything will be prettier :)</p>
+                    <p>This section is not done. The form does not work, and everything will be much prettier when I'm
+                        done :)</p>
                     <h4>lindahlellinor@gmail.com</h4>
                     <h4>+46-70-444 64 52</h4>
 

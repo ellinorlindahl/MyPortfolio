@@ -86,7 +86,7 @@ body {
 /* HOME / INTRO - HELLO AND WELCOME */
 
 .Hello {
-  min-height: 100vh;
+  min-height: 85vh;
  margin-top: 85px;
 padding: 5%; 
 }
@@ -118,13 +118,23 @@ padding: 5%;
   padding: 2%;
 }
 
+/*
 .galleryItem:hover {
   background-color: rgb(255, 255, 255, 0.5);
  }
-
+*/
 
 .galleryText {
   text-align: center;
+}
+
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -151,7 +161,7 @@ padding: 5%;
 
 button {
   margin-top: 4%;
-  padding: 15px 30px;
+  padding: 16px 20px;
   border-radius: 4px;
   border: none;
   outline: none;
@@ -317,18 +327,62 @@ margin-right: 4%;
 }
 
 .contactBox1 {
-  width: 30%;
+ width: 50%;
   height: 50%;
+  padding: 2%;
   
 }
 
 .contactBox2 {
-  width: 30%;
+  width: 50%;
   height: 50%;
+  padding: 2%;
   
 }
 
+#message {
+  width: 100%;
+  line-height: 75px;
+  padding: 1% 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+ 
+}
 
+#message:focus, #message:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=text], input[type=email] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1d7;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#formButton {
+  width: 25%;
+    margin-top: 4%;
+    padding: 16px 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#formButton:hover {
+  opacity: 1;
+}
 
 
 
@@ -348,7 +402,43 @@ margin-right: 4%;
 
 
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 
