@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Lindahl - Portfolio webpage</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -20,10 +22,177 @@
         </nav>
     </header>
     <main>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="wrap">
+            <img src="style/img/arrowup.png" id="arrow" class="animated bounce"></button>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
         <div class=Hello>
             <h1>I'm Ellinor Lindahl, <br>a UX designer based in Stockholm.</h1>
-            <h3>Hi and welcome :) Have a look around, relax, make yourself at home!</h3>
+            <div class=welcome>
+                <h3>Hi and welcome :) Have a look around, make yourself at home! This webpage is very much so still
+                    under
+                    construction! For one, I'm currently converting this webpage to
+                    one single parallax scrolling page, but I'm not quite done yet. Please use the navbar to find all
+                    the
+                    info you want on separate pages for now :)
+                </h3>
+            </div>
         </div>
+
+
+        <div class="whoAmI">
+            <h2>Who am I?</h2>
+            <hr>
+            <div class="flex-container">
+                <div class="flex-item1">
+                    <img class="face" src="style/img/profilepic/EllinorCVbild.png" alt="Picture of Ellinor Lindahl">
+
+                </div>
+
+                <div class="flex-item2">
+                    <p class="shortText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                        dolore
+                        magna aliqua. Nec ullamcorper sit amet risus nullam eget felis. Orci ac auctor augue mauris
+                        augue
+                        neque.
+                        A
+                        erat
+                        nam at lectus urna duis. Cras sed felis eget velit. Tellus molestie nunc non blandit massa enim
+                        nec.
+                        Sit
+                        amet
+                        nisl suscipit adipiscing. </p>
+                    <ul>
+                        <li>I like doing this</li>
+                        <li>I also like doing that</li>
+                        <li>I can do this</li>
+                        <li>and I can do that</li>
+                        <li>HTML/CSS (fun fact: I built this website myself!)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="longText">
+                Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Feugiat nibh sed pulvinar
+                proin
+                gravida hendrerit lectus a. Nisl nisi scelerisque eu ultrices vitae auctor eu. Eu sem integer vitae
+                justo.
+                Urna
+                cursus eget nunc scelerisque viverra mauris in aliquam sem. Etiam erat velit scelerisque in dictum non
+                consectetur. Consectetur adipiscing elit pellentesque habitant morbi. Consequat ac felis donec et odio
+                pellentesque. Tortor posuere ac ut consequat. Mattis enim ut tellus elementum. Varius morbi enim nunc
+                faucibus
+                a. Mauris in aliquam sem fringilla ut morbi tincidunt.</p>
+
+            <div class="buttons">
+                <button type="button"
+                    onclick="window.location.href='https://www.linkedin.com/in/ellinor-lindahl-97120268/';">VISIT
+                    MY
+                    LINKEDIN
+                    PROFILE</button>
+
+                <button type="button" onclick="window.location.href='about.html';">READ MORE ABOUT ME</button>
+                <button type="button" onclick="window.location.href='contact.html';">ASK ME QUESTIONS</button>
+            </div>
+
+        </div>
+
+
+        <div class="projects">
+            <h2>Some UX projects I'm proud of</h2>
+            <hr>
+
+            <div class="projectsGallery">
+                <div class="galleryItem">
+                    <img src="style/img/genericUXworkPic.jpg" alt="Picture of UX workshop">
+                    <div class="galleryText">PriceRunner Internship | 2021</div>
+                </div>
+
+                <div class="galleryItem">
+                    <img onclick="" src="style/img/emptyMockupframe.jpg" alt="Picture of mockup">
+                    <div class="galleryText">Arbetsförmedlingen | 2020</div>
+                </div>
+
+                <div class="galleryItem">
+                    <img onclick="" src="style/img/frisq/frisq2.png" alt="Picture from FRISQ project">
+                    <div class="galleryText">FRISQ | 2020</div>
+                </div>
+
+                <div class="galleryItem">
+                    <img onclick="" src="style/img/ab/ab1.png" alt="Picture from Aftonbladet project">
+                    <div class="galleryText">Aftonbladet x Gen Z</div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="contactMe">
+            <h2>Say hi :)</h2>
+            <hr>
+            <main class="mainContainerContact">
+
+
+                <div class="contactBox1">
+
+                    <form class="contactform" name="contactform" method="post" action="#">
+                        <fieldset>
+                            <legend>Hello,</legend>
+                            <br />
+                            <label for="message"><i class="material-icons" style="font-size:16px"></i></label>
+                            <input type="text" id="message" name="message"
+                                placeholder="What's on your mind?"><br /><br /><br />
+                            <label for="name"><i class="material-icons" style="font-size:16px">Name</i></label>
+                            <input type="text" id="name" name="name" placeholder="Your name.."><br /><br />
+                            <label for="company"><i class="material-icons" style="font-size:16px">Company</i></label>
+                            <input type="text" id="company" name="company" placeholder="Company.."><br /><br />
+                            <label for="email"><i class="material-icons" style="font-size:16px">Email</i></label>
+                            <input type="text" id="email" name="email" placeholder="Email address.."><br />
+                            <br /><br />
+                            <button>Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="contactBox2">
+
+                    <p>This section is not done. The form does not work, and everything will be prettier :)</p>
+                    <h4>lindahlellinor@gmail.com</h4>
+                    <h4>+46-70-444 64 52</h4>
+
+
+                </div>
+
+        </div>
+
+
+
     </main>
 
     <footer>

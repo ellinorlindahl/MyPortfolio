@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Lindahl - Portfolio webpage</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
@@ -26,11 +27,34 @@
 
         <div class="contactBox1">
 
-            <h4>(I will put a contact form here)</h4>
+            <form class="contactform" name="contactform" method="post" action="#">
+                <fieldset>
+                    <legend>Say hi!</legend>
+
+                    <label for="name"><i class="material-icons" style="font-size:16px">
+                            sentiment_very_satisfied
+                        </i></label>
+                    <input type="text" id="name" name="name" placeholder="Your name.."><br />
+                    <label for="company"><i class="material-icons" style="font-size:16px">
+                            business
+                        </i></label>
+                    <input type="text" id="company" name="company" placeholder="Company.."><br />
+                    <label for="email"><i class="material-icons" style="font-size:16px">
+                            mail_outline
+                        </i></label>
+                    <input type="text" id="email" name="email" placeholder="Email address.."><br />
+                    <label for="message"><i class="material-icons" style="font-size:16px">
+                            chat_bubble_outline
+                        </i></label>
+                    <input type="text" id="message" name="message" placeholder="What's on your mind?"><br /><br />
+                    <button>Send</button>
+                </fieldset>
+            </form>
         </div>
 
         <div class="contactBox2">
-            <h4>(I will put other contact information here, phone numbers, email address etc)</h4>
+            <h4>lindahlellinor@gmail.com</h4>
+            <h4>+46-70-444 64 52</h4>
 
             <a href="https://www.linkedin.com/in/ellinor-lindahl-97120268/" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
@@ -40,10 +64,6 @@
 
     </main>
     <footer>
-        <a href="https://www.linkedin.com/in/ellinor-lindahl-97120268/" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-facebook"></a>
         <p class="footerText">© Ellinor Lindahl 2021 | all design & code credit Ellinor Lindahl</p>
     </footer>
 
