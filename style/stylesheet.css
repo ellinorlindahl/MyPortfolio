@@ -68,7 +68,7 @@ a.active {
 /* BODY */
 
 body {
-   margin: 0;
+   margin: 0%;
     display: flex;
     flex-direction: column;
     /* background-color:gainsboro; */
@@ -146,7 +146,8 @@ img.hover-shadow {
 .contactMe {
   min-height: 80vh;
   padding: 2%;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.2);
+  
 }
 
 
@@ -240,11 +241,11 @@ footer {
 
 h2 {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 4%;
     }
     
 hr { 
-  margin-bottom: 5%;
+  margin-bottom: 3%;
     width: 20%;
     height: 0px;
     border: none;
@@ -269,8 +270,10 @@ hr {
     align-content: center;
 }
 
-img.face {
-    max-width: 200px;
+.face {
+    max-width: 250px;
+    background-color: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  /*OBS WHEN YOIU HAVE TIME: FIX THIS LINEAR GRADIENT SO THAT IT WORKS :) */
 }
 
 .shortText {
@@ -324,7 +327,8 @@ margin-right: 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+ width: 100%;
+ 
 }
 
 .contactBox1 {
@@ -332,23 +336,22 @@ margin-right: 4%;
   height: 50%;
   padding: 2%;
   
+  
 }
 
 .contactBox2 {
   width: 50%;
   height: 50%;
   padding: 2%;
-  
+ 
 }
 
 #message {
   width: 100%;
-  line-height: 75px;
   padding: 1% 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
- 
+  background: #f1f1f1d7;
 }
 
 #message:focus, #message:focus {

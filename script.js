@@ -35,6 +35,17 @@ function topFunction() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 // Get the modal
 var modal = document.getElementById("frisqModal");
 
