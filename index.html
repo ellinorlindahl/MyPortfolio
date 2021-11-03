@@ -13,70 +13,30 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="#ankareAbout">About Me</a>
-            <a href="#ankareProjects">Portfolio/Projects</a>
-            <a href="#ankareContact">Contact</a>
+    <header class="menu" id="menu">
+        <a class="page_title" href="index.html"><b>ELLINOR LINDAHL</b></a>
+        <!-- <img href="index.html" id=signature src="/Signature/ellinor-lindahl (4).svg" alt="signature"> -->
+        <nav class="navbar" id="navbar">
+            <a href="#ankareAbout">ABOUT ME</a>
+            <a href="#ankareProjects">PROJECTS</a>
+            <a href="#ankareContact">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
         </nav>
     </header>
 
-    <!-- THINGS I WANT TO ADD (remove from this list when done):
-
-1. Modal pop-ups for each project, with more info about the project!
-2. Scroll indicator for the entire page.
-3. Skriv ordentligt content för alla delar, speciellt "about" :)
-4. Make the form actually send messages to my email inbox!
-5. Improve the tillgänglighet. Otroligt dåliga färger just nu.
-
- -->
-
-
-
-
 
     <main>
-
-        <button onclick="topFunction()" id="myBtn" title="Go to top" class="wrap">
-            <img src="style/img/arrowup.png" id="arrow" class="animated bounce"></button>
-
-        <script>
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
-
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () { scrollFunction() };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-
-        <div class=Hello>
-            <h1>I'm Ellinor Lindahl, <br>a UX designer based in Stockholm.</h1>
+        <div id=ankareHello class=Hello>
+            <h1>I'm Ellinor, <br>a UX designer based in Stockholm.</h1>
             <div class=welcome>
-                <h3>Hi and welcome to my portfolio :)
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br> Obs: This webpage is still under
-                    construction,
-                    please excuse any functional
-                    inconvieniences or
-                    ugliness for
-                    now!
+                <h3>I'm currently looking for
+                    internship
+                    opportunities for Feb-May 2022. <br>Hi, and welcome to my portfolio :)
+                </h3>
                 </h3>
             </div>
         </div>
-
 
         <div id=ankareAbout class="whoAmI">
             <h2>Who am I?</h2>
@@ -85,125 +45,162 @@
                 <div class="flex-item1">
                     <img class="face" src="style/img/profilepic/EllinorCVbildPixcleaner.png"
                         alt="Picture of Ellinor Lindahl">
-
+                    <button type="button"
+                        onclick="window.location.href='https://www.linkedin.com/in/ellinor-lindahl-97120268/';">Go to
+                        LinkedIn profile</button>
                 </div>
 
                 <div class="flex-item2">
-                    <p class="shortText">I'm a UX designer with an extra special little place in my heart for
-                        information achitecture and UX writing. I strongly believe that the best design is invisible,
-                        and the only way to achieve it is by connecting with the users of your service directly.
+                    <table id=whoAmItable>
+                        <tr>
+                            <td><strong>Name:</strong></td>
+                            <td>Ellinor Lindahl</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Location:</strong></td>
+                            <td>Stockholm, Sweden</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Background:</strong></td>
+                            <td>Project management, music industry, mediatech startups</td>
+                        </tr>
+                    </table>
+
+                    <p class="backgroundText">
+                        Before studying UX design, I
+                        worked at
+                        several mediatech start-ups,
+                        often in close collaboration with IT departments for product development projects.
+                        Born and raised in Stockholm, I have a passion for music and interior design. I've dabbled in
+                        front-end development, mandarin chinese and international development studies (socialogy and
+                        politics) but
+                        I've finally found my true calling in UX.
+
+                        <br><br> I am currently looking for internship
+                        opportunities for spring 2022 (feb-may), but is also open to smaller projects alongside
+                        finishing my education.
                     </p>
-                    <ul>
-                        <li>I like doing this</li>
-                        <li>I also like doing that</li>
-                        <li>I can do this</li>
-                        <li>and I can do that</li>
-                        <li>Also this</li>
-                        <li>and that</li>
-                        <li>and this too!</li>
-                        <li>HTML/CSS (fun fact: I built this website myself!)</li>
-                    </ul>
+
                 </div>
             </div>
-
-            <p class="longText">
-                My background is in the music industry, where my love for creative ways to
-                make a large crowd of people happy comes from. I've dabbled in project management, front-end
-                development and international development studies (socialogy and politics) but I've finally
-                found my true calling in UX.
-                Equis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Feugiat
-                nibh sed pulvinar
-                proin
-                gravida hendrerit lectus a. Nisl nisi scelerisque eu ultrices vitae auctor eu. Eu sem integer vitae
-                justo.
-                <br><br> I am currently looking for internship
-                opportunities for spring 2022 (feb-may).
+            <h2>How can I help?</h2>
+            <hr>
+            <p class="uxText">My heart beats extra hard for information architecture (I love the pursuit of the ultimate
+                logic, clarity and structure) and UX writing - where commucation and language meets design. My goal
+                in any
+                design process is to create intentional, intuitive and
+                invisible design by creating and maintaining a solid understanding and connection with your users
+                directly.
             </p>
+            <table id="uxTable">
+                <th><strong>Information architecture:</strong></th>
+                <td>Organizing information in a structured and intuitive way.</td>
+                </tr>
+                <tr>
+                    <th><strong>UX research:</strong></th>
+                    <td>Connecting with your users and creating a deep understanding of their needs.</td>
+                </tr>
+                <tr>
+                    <th><strong>UX writing:</strong></th>
+                    <td>Designing a clear and helpful experience by using words.</td>
+                </tr>
+                <tr>
+                    <th><strong>Methods:</strong></th>
+                    <td>Design Thinking / Indepth interviewing / Thematic analysis / Workshops / User Journeys / Impact
+                        mapping / Cognitive walkthough / and more.</td>
+                </tr>
+                <tr>
+                    <th><strong>Tools:</strong></th>
+                    <td>Figma / Miro / Visual Studio Code / Balsamiq / and open to learning many more!</td>
+                </tr>
 
-            <div class="buttons">
-                <button type="button"
-                    onclick="window.location.href='https://www.linkedin.com/in/ellinor-lindahl-97120268/';">VISIT
-                    MY
-                    LINKEDIN
-                    PROFILE</button>
-
-                <button type="button" onclick="window.location.href='about.html';">READ MORE ABOUT ME</button>
-                <button type="button" onclick="window.location.href='#ankareContact';">ASK ME QUESTIONS</button>
-            </div>
-
+            </table>
         </div>
+
+
+
+
+
+
         <div id=ankareProjects class="projects">
-            <h2>Some UX projects I'm proud of</h2>
+            <h2>Some UX projects I've learned alot from</h2>
             <hr>
 
             <div class="projectsGallery">
+
                 <div class="galleryItem">
                     <img src="style/img/Pricerunner.jpeg" alt="Pricerunner logo" class="hover-shadow">
-                    <div class="galleryText">PriceRunner | Internship (9 weeks) | 2021 <br> An analysis
-                        and evaluation of of their
-                        digital workspace / internal operations system, from a UX perspective.
+                    <div class="galleryText">
+                        <h3>PriceRunner | Internship (9 weeks) | 2021 </h3>
+                        <p>
+                            An in-depth evaluation from a UX perspective of their
+                            digital workspace / internal operations system. Presenting and
+                            explaining the design process and justifying design proposals to the management board.</p>
+                        <ul>
+                            <li>In-depth user interviews</li>
+                            <li>Cognitive walkthrough</li>
+                            <li>Impact mapping</li>
+                            <li>Thematic analysis</li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="galleryItem">
-                    <img onclick="" src="style/img/emptyMockupframe.jpg" alt="Picture of mockup" class="hover-shadow">
-                    <div class="galleryText">Arbetsförmedlingen | 2020 <br> Evaluating and testing a specific existing
-                        user flow
-                        on Arbetsförmedlingens webpage. Focus on user testing.</div>
+
+                    <div class="galleryText">
+                        <h3>Arbetsförmedlingen | 2020</h3>
+                        <img onclick="" src="" alt="Picture of mockup" class="hover-shadow">
+                        <p>
+                            Evaluating and testing a specific existing
+                            user flow
+                            on Arbetsförmedlingens webpage. Focus on user testing.</p>
+                    </div>
                 </div>
 
                 <div class="galleryItem">
-                    <img id="myBtn3" onclick="" src="style/img/frisq/FRISQfront.png" alt="Picture from FRISQ project"
-                        class="hover-shadow">
-                    <div class="galleryText">FRISQ | 2020 <br> “Hur kan man öka patientengagemang
+                    <img id="myBtn3" onclick="" src="" alt="Picture from FRISQ project" class="hover-shadow">
+                    <div class="galleryText">
+                        <h3>FRISQ | 2020</h3> <br> “Hur kan man öka patientengagemang
                         utanför den digitala sfären? Går det att göra på andra sätt?” A UX research focused project.
                     </div>
                 </div>
 
                 <div class="galleryItem">
-                    <img onclick="" src="style/img/ab/AB+GENZ.png" alt="Picture from Aftonbladet project"
-                        class="hover-shadow">
-                    <div class="galleryText">Aftonbladet x Gen Z | 2020 <br> A two week Design
+                    <img onclick="" src="" alt="Picture from Aftonbladet project" class="hover-shadow">
+                    <div class="galleryText">
+                        <h3>Aftonbladet x Gen Z | 2020</h3> <br> A two week Design
                         Thinking/UX research
                         exercise on how to include and improve the UX experience of Aftonbladet for generation Z
-                        users.</div>
+                        users.
+                    </div>
                 </div>
 
             </div>
 
         </div>
         </div>
-        <!-- The Modal för FRISQ -->
-        <div id="frisqModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Här ska det stå massa info om projektet!!</p>
-            </div>
-        </div>
-        <!-- END of The Modal -->
 
 
         <div id=ankareContact class="contactMe">
-            <h2>Say hi :)</h2>
+            <h2>Say hi!</h2>
             <hr>
             <main class="mainContainerContact">
 
                 <div class="contactBox2">
+                    <h3>lindahlellinor@gmail.com</h3>
+                    <h4>or</h4>
 
-                    <h3>Connect with me by email,</h3>
-                    <h4>lindahlellinor@gmail.com</h4>
-                    <h3>or Linkedin:</h3>
-                    <a href="https://www.linkedin.com/in/ellinor-lindahl-97120268/" class="fa fa-linkedin"></a>
-
-
+                    <button type="button" id="contactLinkedIn"
+                        onclick="window.location.href='https://www.linkedin.com/in/ellinor-lindahl-97120268/';">Go to
+                        LinkedIn profile</button>
+                    <!--  <h3>or Linkedin:</h3>
+                          <a href="https://www.linkedin.com/in/ellinor-lindahl-97120268/" class="fa fa-linkedin"></a> -->
                 </div>
-
+                <!-- 
                 <div class="contactBox1">
                     <h3>Or message me directly:</h3>
                     <form class="contactform" name="contactform" method="post" action="#">
-
                         <label for="name"><i>Name</i></label><br />
                         <input type="text" id="name" name="name" placeholder="Enter name.."><br />
                         <label for="email"><i>Email</i></label><br />
@@ -213,14 +210,10 @@
                         <label for="message"><i>Message</i></label><br />
                         <textarea id="message" name="text" rows="14" cols="10" wrap="soft"
                             placeholder="What's on your mind..?"></textarea>
-                        <!-- <input type="text" id="message" name="message" placeholder="Write something.."><br /><br /> -->
                         <button id="formButton">Send</button>
-
                     </form>
-                </div>
-
-
-
+                </div> 
+                -->
         </div>
 
 
@@ -228,9 +221,10 @@
     </main>
 
     <footer>
-        <a href="https://www.linkedin.com/in/ellinor-lindahl-97120268/" class="fa fa-linkedin"></a>
+        <!--  <a href="https://www.linkedin.com/in/ellinor-lindahl-97120268/" class="fa fa-linkedin"></a> -->
 
-        <p class="footerText">© Ellinor Lindahl 2021 | all design & code credit Ellinor Lindahl</p>
+        <p class="footerText"> | design & code © Ellinor Lindahl 2021 | Please don't hesitate to send me feedback on how
+            to improve this website | </p>
     </footer>
 </body>
 

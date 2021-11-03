@@ -1,0 +1,30 @@
+/*the TABLE for MY WORK EXPERIENCE + EDUCATION*/
+.cvTable {
+    width: 100%;
+    margin-right: 4%;
+    text-align: left;
+    }
+
+.cvTable td, .cvTable th {
+    padding: 2%;
+    min-width: 200px;
+  }
+
+th {
+    font-family: fontsMontserratBold;
+}
+
+td.cvText {
+margin-right: 4%;
+}
+
+
+
+
+
+
+
+.face {
+    background-color: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  /*OBS WHEN YOIU HAVE TIME: FIX THIS LINEAR GRADIENT SO THAT IT WORKS :) */
+}
