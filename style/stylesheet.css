@@ -17,7 +17,18 @@ h2 {
   margin-top: 4%;
 color: #260E0E;
   }
+
+  p {
+    text-align: left;
+    line-height: 1.5;
+  }
   
+ol {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
 /**FONTS**/
 
 @font-face {
@@ -85,6 +96,10 @@ body {
 
  h2 {
   margin-top: 15%;
+  }
+
+  p {
+    text-align: justify;
   }
 
 }
@@ -361,14 +376,15 @@ button, #contactLinkedIn{
   width: 100%;
   padding: 2%;
   justify-content: space-between;
+  align-content: center;
+}
+
+.galleryItem h3 {
+  text-align: center;
 }
 
 .galleryText {
-  width: 80vw;
-}
-
-.galleryPic img{
- object-fit: scale-down;
+  width: 100%;
 }
 
 
@@ -385,9 +401,7 @@ button, #contactLinkedIn{
     align-items: center;
     object-fit: contain;
   }
-    .galleryItem h3 {
-    text-align: center;
-  }
+    
 
     }
   
