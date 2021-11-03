@@ -51,6 +51,9 @@ margin-bottom: 3%;
   border-top: 1px solid #260E0E;
 }
 
+ul {
+  list-style: square;
+}
 
 /* BODY */
 
@@ -69,7 +72,22 @@ body {
   background-size: cover; */
 }
 
+/* BODY ON SCREEN SMALLER THAN 800px */
 
+@media screen and (max-width: 800px) {
+
+  body {
+   max-width :100%;
+    margin: 0%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ h2 {
+  margin-top: 15%;
+  }
+
+}
 
 /* HEADER AND MENU BAR */
 
@@ -126,13 +144,10 @@ background-size: cover;
   display: none;
 }
 
-
-
   /* NAVBAR ON SCREENS 600px OR SMALLER*/
 
   @media screen and (max-width: 600px) {
 
-  
     .navbar a {
         display: none;
     }
@@ -154,8 +169,7 @@ background-size: cover;
         display: block;
         text-align: right;
     }
-
-}
+  }
 
 
 
@@ -171,6 +185,19 @@ padding: 10%;
 .Hello h1 {
   color: #260E0E
 }
+
+/* HOME / INTRO - HELLO AND WELCOME ON SCREENS SMALLER THAN 800px */
+
+@media screen and (max-width: 800px) {
+
+  .Hello {
+    min-height: 75vh;
+   margin-top: 25vh;
+  padding: 5%; 
+  }
+}
+
+
 
 
 /**THE ABOUT ME SECTION**/
@@ -263,6 +290,53 @@ button:hover {
 
 
 
+/**THE ABOUT ME SECTION ON SCREENS SMALLER THAN 800px**/
+
+@media screen and (max-width: 800px) {
+
+  .flex-container {
+    margin: 0% 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;  
+   justify-content: space-around;
+  }
+  
+.flex-item1 {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  max-width: 100%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.flex-item2 {
+  max-width: 100%;
+  margin-top: 4%;
+padding: 0%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+table {
+  display:table-cell;
+}
+ 
+button, #contactLinkedIn{
+  width: 250px;
+  height: 50px;
+}
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -274,18 +348,6 @@ button:hover {
   background-color: rgb(255, 255, 255, 0.4);
 }
 
-.galleryItem {
-  display: flex;
-  width: 100%;
-  padding: 2%;
-  justify-content: space-between;
-}
-
-.galleryItem img {
-  height: 250px;
-}
-
-
 /*
 .projectsGallery {
   display: flex;
@@ -294,8 +356,41 @@ button:hover {
 }
 */
 
+.galleryItem {
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-between;
+}
+
+.galleryText {
+  width: 80vw;
+}
+
+.galleryPic img{
+ object-fit: scale-down;
+}
 
 
+
+/* PROJECTS SECTION ON SCREENS SMALLAR THAN 800px */
+@media screen and (max-width: 800px) {
+
+  .galleryItem {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+  }
+    .galleryItem h3 {
+    text-align: center;
+  }
+
+    }
+  
 
 
 
@@ -333,64 +428,11 @@ button:hover {
 }
 
 #contactLinkedIn {
-  width: 50%;
-  height: 50%;
+  width: 250px;
+  height: 50px;
   padding: 2%;
   color: black;
 }
-
-/* Contact form currently hidden because not done
-
-.contactBox1 {
- width: 50%;
-  height: 50%;
-  padding: 2%;
-  
-} 
-
-#message {
-  width: 100%;
-  padding: 1% 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1d7;
-}
-
-#message:focus, #message:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-input[type=text], input[type=email] {
-  width: 50%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1d7;
-}
-
-input[type=text]:focus, input[type=email]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-#formButton {
-  width: 25%;
-    margin-top: 4%;
-    padding: 16px 20px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    background-color: #ddd;
-    cursor: pointer;
-}
-
-#formButton:hover {
-  opacity: 1;
-}
-
-*/
 
 
 
@@ -418,66 +460,4 @@ footer {
 
 
 
-/* GENERAL LAYOUT CHANGES ON SCREENS 800px OR SMALLER */
-@media screen and (max-width: 800px) {
-
-   body {
-    max-width :100%;
-     margin: 0%;
-      display: flex;
-      flex-direction: column;
-  }
-
-  .Hello {
-    min-height: 75vh;
-   margin-top: 25vh;
-  padding: 5%; 
-  }
-
-
-  .flex-container {
-    margin: 0% 5%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;  
-   justify-content: space-around;
-  }
-  
-.flex-item1 {
-  margin-top: 4%;
-  margin-bottom: 4%;
-  max-width: 100%;
-  display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-
-.flex-item2 {
-  max-width: 100%;
-  margin-top: 4%;
-padding: 0%;
-  display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
- 
-button, #contactLinkedIn{
-  width: 250px;
-  height: 50px;
-}
-
-.galleryItem {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  padding: 2%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.galleryItem img {
-  max-width: 100%;
-}
-
-  }
 

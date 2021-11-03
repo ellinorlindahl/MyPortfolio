@@ -28,3 +28,61 @@ margin-right: 4%;
     background-color: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
   /*OBS WHEN YOIU HAVE TIME: FIX THIS LINEAR GRADIENT SO THAT IT WORKS :) */
 }
+
+
+
+
+
+
+/* CONTACT FORM currently hidden because not done
+
+.contactBox1 {
+ width: 50%;
+  height: 50%;
+  padding: 2%;
+  
+} 
+
+#message {
+  width: 100%;
+  padding: 1% 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1d7;
+}
+
+#message:focus, #message:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=text], input[type=email] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1d7;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#formButton {
+  width: 25%;
+    margin-top: 4%;
+    padding: 16px 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#formButton:hover {
+  opacity: 1;
+}
+
+*/
