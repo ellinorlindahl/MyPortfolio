@@ -466,6 +466,18 @@ button, #contactLinkedIn{
   height: 50px;
 }
 
+.galleryItem {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galleryItem img {
+  max-width: 100%;
+}
 
   }
 
