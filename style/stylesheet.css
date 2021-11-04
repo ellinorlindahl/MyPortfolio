@@ -274,8 +274,6 @@ button {
   color: black;
   font-weight: bold;
   cursor: pointer;
-
- 
 }
 
 button:hover {
@@ -289,7 +287,7 @@ button:hover {
 }
 
 #uxTable {
-  margin: 4% 10%;
+   margin: 4% 10% 4% 10%;
 }
 
 #uxTable th {
@@ -312,7 +310,7 @@ button:hover {
 @media screen and (max-width: 800px) {
 
   .flex-container {
-    margin: 0% 5%;
+    margin: 4% 10% 4% 10%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;  
@@ -339,6 +337,8 @@ padding: 0%;
 
 table {
   display:table-cell;
+  margin: 4% 10% 4% 10%;
+  text-align: justify;
 }
  
 button, #contactLinkedIn{
@@ -346,6 +346,14 @@ button, #contactLinkedIn{
   max-width: 250px;
   height: 50px;
 }
+
+
+#uxTable {
+  margin: 4% 10% 4% 10%;
+  text-align: justify;
+}
+
+
 
 }
 
@@ -362,6 +370,7 @@ button, #contactLinkedIn{
 /**PROJECTS SECTION **/
 
 .projects {
+  margin: 4% 10% 4% 10%;
   padding: 2%;
   background-color: rgb(255, 255, 255, 0.4);
 }
@@ -465,9 +474,9 @@ button, #contactLinkedIn{
 /* FOOTER */
 
 footer {
-  margin-top: 2%;
     margin-bottom: 3px;
     width: 100%;
+    background-color: #F6F5F4;
 }
 
 .footerText {
