@@ -74,7 +74,7 @@ body {
   padding:0;
     display: flex;
     flex-direction: column;
-    background-color:#fcfcfc; 
+    background-color: rgb(255, 255, 255, 0.4); 
     /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); 
     background-size: 100vw;
     background-attachment: fixed;
@@ -116,7 +116,7 @@ body {
   padding: 20px 0px;
 
   /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); */
-  background-color:#fcfcfc;
+  background-color: rgb(255, 255, 255);
   background-size: 100%;
   background-attachment: fixed;
 background-position: center;
@@ -214,14 +214,13 @@ padding: 10%;
 
 
 
-
 /**THE ABOUT ME SECTION**/
 
 .whoAmI {
   min-height: 100vh;
   max-width: 100%;
   padding: 2%;
- background-color: rgb(255, 255, 255, 0.8);
+ background-color: #F6F5F4;
 }
 
 .flex-container {
@@ -263,7 +262,8 @@ padding: 10%;
 
 
 button {
-  max-width: 200px;
+  width: 220px;
+  height: 50px;
   margin-top: 4%;
   padding: 4%;
   border-radius: 2px;
@@ -271,9 +271,11 @@ button {
   outline: none;
   font-size: 1rem;
   background-color: #BFB6AE;
-  color: #260E0E;
+  color: black;
   font-weight: bold;
   cursor: pointer;
+
+ 
 }
 
 button:hover {
@@ -389,6 +391,11 @@ button, #contactLinkedIn{
 }
 
 
+.projects h4 {
+  text-align: center;
+}
+
+
 
 /* PROJECTS SECTION ON SCREENS SMALLAR THAN 800px */
 @media screen and (max-width: 800px) {
@@ -420,8 +427,9 @@ button, #contactLinkedIn{
 /**CONTACT SECTION**/
 
 .contactMe {
-  min-height: 80vh;
+  min-height: 65vh;
   padding: 2%;
+  background-color: #F6F5F4;
 }
 
 .mainContainerContact{
@@ -460,14 +468,13 @@ footer {
   margin-top: 2%;
     margin-bottom: 3px;
     width: 100%;
-    text-align: center;
-    
 }
 
 .footerText {
     font-size: small;
     font-weight: lighter;
     padding: 0%;
+    text-align: center;
 }
 
 
