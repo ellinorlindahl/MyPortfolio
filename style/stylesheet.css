@@ -163,27 +163,33 @@ background-size: cover;
 
   @media screen and (max-width: 600px) {
 
-    .navbar a {
-        display: none;
-    }
-    .navbar a.icon {
-        float: right;
-        display: block;
+    .menu {
+      align-content: center;
     }
 
-    .navbar .responsive {
-        position: relative;
-    }
-    .navbar .responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navbar .responsive a {
-        float: none;
-        display: block;
-        text-align: right;
-    }
+    .navbar a {
+      display: none;
+  }
+  .navbar a.icon {
+      float: right;
+      display: block;
+  }
+
+  .navbar.responsive {
+      position: relative;
+  }
+  .navbar.responsive a.icon {
+      position: absolute;
+      margin-top: 0;
+      right: 0;
+      top: 0;
+  }
+  .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+  }
+
   }
 
 
