@@ -16,7 +16,10 @@ h2 {
   text-align: center;
   margin-top: 4%;
 color: #260E0E;
+font-family: fontsMontserratBold;
   }
+
+
 
   p {
     text-align: left;
@@ -28,6 +31,7 @@ ol {
   padding: 0;
   text-decoration: underline;
 }
+
 
 /**FONTS**/
 
@@ -108,89 +112,97 @@ body {
 
 .menu {
   width: 100%;
-  max-height: 75px;
-  position: fixed;
-
-  overflow: hidden;
-  z-index: 999;
   padding: 20px 0px;
-
-  /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); */
   background-color: rgb(255, 255, 255);
-  background-size: 100%;
+  position: fixed;
+  /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); 
+background-size: 100%;
   background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
-background-size: cover; 
+background-size: cover; */
 }
 
-/* En signatur-logga som jag inte har med nu.. 
+/* En signatur-logga som jag inte har med nu..  */
 #signature {
-  max-height: 35px;
+  max-height: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
   float: left;
-  vertical-align: middle;
 } 
-*/
 
+
+/*
 .page_title {
   font-weight: bolder;
   margin-left: 20px;
+  font-size: 18px;
+}
+*/
+
+
+
+/* NYA NAVBAREN! */
+
+.topnav {
+  overflow: hidden;
+  margin-right: 20px;
+  float: right;
+  font-weight: lighter;
+  color: #260E0E;
 }
 
-.menu a {
-  padding: 12px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
 }
 
-.menu a:hover {
+.topnav a:hover {
   text-decoration: overline;
-  color: #260E0E
+  color: black;
 }
 
-.navbar {
-  margin-right: 20px;
-  float: right;
-  font-weight: lighter;
-  
-}
 
-.navbar .icon {
+/* Hide the hamburger when large screen */
+.topnav .icon {
   display: none;
 }
 
-  /* NAVBAR ON SCREENS 600px OR SMALLER*/
 
-  @media screen and (max-width: 600px) {
-
-    .menu {
-      align-content: center;
-    }
-
-    .navbar a {
-      display: none;
-  }
-  .navbar a.icon {
-      float: right;
-      display: block;
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 
-  .navbar.responsive {
-      position: relative;
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
   }
-  .navbar.responsive a.icon {
-      position: absolute;
-      margin-top: 0;
-      right: 0;
-      top: 0;
-  }
-  .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: right;
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 
-  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -200,7 +212,6 @@ background-size: cover;
   min-height: 75vh;
  margin-top: 130px;
 padding: 10%; 
-
 }
 
 .Hello h1 {
@@ -217,6 +228,12 @@ padding: 10%;
   padding: 5%; 
   }
 }
+
+
+
+
+
+
 
 
 
@@ -281,6 +298,7 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
 
 button:hover {
   background-color: #75696A;
@@ -410,7 +428,7 @@ button, #contactLinkedIn{
 
 
 
-/* PROJECTS SECTION ON SCREENS SMALLAR THAN 800px */
+/* PROJECTS SECTION ON SCREENS SMALLER THAN 800px */
 @media screen and (max-width: 800px) {
 
   .galleryItem {
@@ -426,9 +444,6 @@ button, #contactLinkedIn{
 
     }
   
-
-
-
 
 
 

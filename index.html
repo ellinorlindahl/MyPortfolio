@@ -7,23 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Lindahl - Portfolio webpage</title>
     <link rel="stylesheet" href="style/stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
 
 </head>
 
 <body>
     <header class="menu" id="menu">
-        <a class="page_title" href="#ankareHello"><b>ELLINOR LINDAHL</b></a>
-        <!-- <img href="index.html" id=signature src="/Signature/ellinor-lindahl (4).svg" alt="signature"> -->
-        <nav class="navbar" id="navbar">
+        <img href="index.html" id=signature src="/Signature/ellinor-lindahl (4).svg" alt="signature">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="topnav" id="myTopnav">
+            <!--     <a class="page_title" href="#home"><b>ELLINOR LINDAHL</b></a> -->
+            <a href="#home" class="active"> </a>
+            <a href="#ankareAbout">ABOUT ME</a>
+            <a href="#ankareProjects">PROJECTS</a>
+            <a href="#ankareContact">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <!--  
+             <a class="page_title" href="#ankareHello"><b>ELLINOR LINDAHL</b></a>
+         <img href="index.html" id=signature src="/Signature/ellinor-lindahl (4).svg" alt="signature"> 
+            <nav class="navbar" id="navbar">
             <a href="#ankareAbout">ABOUT ME</a>
             <a href="#ankareProjects">PROJECTS</a>
             <a href="#ankareContact">CONTACT</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i></a>
-        </nav>
+        </nav> -->
+
+
     </header>
+
+
+
+
 
 
     <main>
@@ -38,6 +61,11 @@
             </div>
         </div>
 
+
+
+
+
+
         <div id=ankareAbout class="whoAmI">
             <h2>Who am I?</h2>
             <hr>
@@ -46,11 +74,12 @@
                     <img class="face" src="style/img/profilepic/EllinorCVbildPixcleaner.png"
                         alt="Picture of Ellinor Lindahl">
                     <button type="button"
-                        onclick="window.location.href='https://www.linkedin.com/in/ellinor-lindahl-97120268/';">Go to
+                        onclick="window.open('https://www.linkedin.com/in/ellinor-lindahl-97120268/')">Go to
                         LinkedIn profile</button>
+
                 </div>
 
-                <div class="flex-item2">
+                <div class=" flex-item2">
                     <table id=whoAmItable cellpadding="0" cellspacing="5">
                         <tr>
                             <td><strong>Name:</strong></td>
@@ -73,15 +102,15 @@
                     <p class="backgroundText">
                         Before studying UX design, I
                         worked at
-                        several mediatech start-ups,
+                        two successful mediatech start-ups,
                         often in close collaboration with IT departments for product development projects. <br>
                         Born and raised in Stockholm, I have a passion for music and interior design. I've studied
                         front-end development, mandarin chinese and international development
-                        studies (sociology, politics and economic history) but
-                        I've finally found my true calling in UX.
+                        studies (sociology/politics/economic history) but I've finally found my true calling in UX.
 
                         <br><br> I'm currently looking for internship
-                        opportunities for spring 2022 (feb-may), but I'm also interested in smaller projects alongside
+                        opportunities for spring 2022 (feb-may), but I'm also interested in smaller projects
+                        alongside
                         finishing my education.
                     </p>
 
@@ -238,8 +267,9 @@
                     <h4>or</h4>
 
                     <button type="button" id="contactLinkedIn"
-                        onclick="window.location.href='https://www.linkedin.com/in/ellinor-lindahl-97120268/';">Go to
+                        onclick="window.open('https://www.linkedin.com/in/ellinor-lindahl-97120268/')">Go to
                         LinkedIn profile</button>
+
                     <!--  <h3>or Linkedin:</h3>
                           <a href="https://www.linkedin.com/in/ellinor-lindahl-97120268/" class="fa fa-linkedin"></a> -->
                 </div>
