@@ -328,6 +328,36 @@ button:hover {
 }
 
 
+#downloadCV {
+  width: 220px;
+  height: 50px;
+  margin-top: 4%;
+  padding: 4%;
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: #BFB6AE;
+  outline: none;
+  font-size: 1rem;
+  
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+align-items: center;
+}
+
+#downloadCV:hover {
+  background-color: #75696A;
+  border-color: #75696A;
+}
+
+#downloadCV:hover a {
+  color: white;
+}
+
+
 
 /**THE ABOUT ME SECTION ON SCREENS SMALLER THAN 800px**/
 
