@@ -120,6 +120,7 @@ body {
   padding: 20px 0px;
   background-color: rgb(255, 255, 255);
   position: fixed;
+  z-index: 1;
   /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); 
 background-size: 100%;
   background-attachment: fixed;
@@ -428,11 +429,9 @@ button, #contactLinkedIn{
 /**PROJECTS SECTION **/
 
 .projects {
-  margin: 4% 10% 4% 10%;
-  padding: 2%;
+  margin: 4% 5% 4% 5%;
   background-color: rgb(255, 255, 255, 0.4);
 }
-
 
 .projectsGallery {
   display: flex;
