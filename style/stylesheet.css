@@ -129,13 +129,13 @@ background-repeat: no-repeat;
 background-size: cover; */
 }
 
-/* En signatur-logga som jag inte har med nu..  */
+/* En signatur-logga som jag inte har med nu..  
 #signature {
   max-height: 40px;
   padding-left: 20px;
   padding-top: 10px;
   float: left;
-} 
+} */
 
 
 /*
@@ -151,6 +151,7 @@ background-size: cover; */
 /* NYA NAVBAREN! */
 
 .topnav {
+  width: 100%;
   overflow: hidden;
   margin-right: 20px;
   float: right;
@@ -160,7 +161,7 @@ background-size: cover; */
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -172,6 +173,18 @@ background-size: cover; */
   text-decoration: overline;
   color: black;
 }
+
+
+#pagetitle {
+  float: left;
+  margin-left: 50px;
+}
+
+#pagetitle:hover {
+text-decoration: none;
+font-weight: 1000;
+}
+
 
 
 /* Hide the hamburger when large screen */
@@ -218,6 +231,7 @@ Show the link that contains should open and close the topnav (.icon) */
   min-height: 75vh;
  margin-top: 130px;
 padding: 10%; 
+scroll-margin-top: 100px;
 }
 
 .Hello h1 {
@@ -250,6 +264,8 @@ padding: 10%;
   max-width: 100%;
   padding: 2%;
  background-color: #F6F5F4;
+
+ scroll-margin-top: 50px;
 }
 
 .flex-container {
@@ -431,6 +447,8 @@ button, #contactLinkedIn{
 .projects {
   margin: 4% 5% 4% 5%;
   background-color: rgb(255, 255, 255, 0.4);
+
+  scroll-margin-top: 100px;
 }
 
 .projectsGallery {
