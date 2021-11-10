@@ -445,7 +445,7 @@ button, #contactLinkedIn{
 /**PROJECTS SECTION **/
 
 .projects {
-  margin: 4% 5% 4% 5%;
+  margin: 4% 0% 4% 0%;
   background-color: rgb(255, 255, 255, 0.4);
 
   scroll-margin-top: 100px;
@@ -481,6 +481,7 @@ button, #contactLinkedIn{
  justify-content: center;
   align-items: center;
  padding: 5px;
+
 }
 
 #FRISQimg:hover {
@@ -492,31 +493,32 @@ opacity: 0.3;
   -webkit-transition: opacity .5s ease-in-out .0s;
     transition: opacity .5s ease-in-out .0s;
     background-color: rgb(255, 255, 255, 1);
-    border: 2px solid #260E0E;
 }
 
 
 
-
-
-
-
-
+.mobileText {
+  visibility: hidden;
+}
 
 
 /* PROJECTS SECTION ON SCREENS SMALLER THAN 800px */
 @media screen and (max-width: 800px) {
 
-  .galleryItem {
+  .projectsGallery {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    padding: 2%;
-    justify-content: space-between;
     align-items: center;
-    object-fit: contain;
   }
     
+  .galleryItem {
+    width: 100%;
+  }
+
+  .mobileText {
+    visibility: visible;
+    background-color: #75696A;
+  }
 
     }
   
