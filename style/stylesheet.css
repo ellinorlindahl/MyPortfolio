@@ -200,19 +200,26 @@ Show the link that contains should open and close the topnav (.icon) */
   .topnav a.icon {
     float: right;
     display: block;
+   
   }
 
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: fixed;
+    
     right: 0;
     top: 0;
   }
   .topnav.responsive a {
     float: none;
-    display: block;
-    text-align: left;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    text-align: right;
   }
+
+
 
 }
 
@@ -527,9 +534,6 @@ opacity: 0.3;
 
 
 
-
-
-
 /**CONTACT SECTION**/
 
 .contactMe {
@@ -586,8 +590,30 @@ footer {
 
 
 
+/* FRISQ PROJECT PAGE!!! */ 
+
+.frisqContainer {
+display: flex;
+flex-direction: column;
+}
 
 
+.frisqContainer h1, h3 {
+  text-align: center;
 
+}
 
+.frisqContainer img {
+  width: 100%;
+}
+
+#introContainer, #whatContainer, #howContainer, #resultContainer{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.introBox, .whatBox, .howBox, .resultBox{
+  width: 50%;
+}
 
