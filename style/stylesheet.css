@@ -245,6 +245,10 @@ scroll-margin-top: 100px;
   color: #260E0E
 }
 
+.welcome h3 {
+  text-align: left;
+}
+
 /* HOME / INTRO - HELLO AND WELCOME ON SCREENS SMALLER THAN 800px */
 
 @media screen and (max-width: 800px) {
