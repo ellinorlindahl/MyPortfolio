@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: fontsMontserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -14,15 +14,27 @@ html {
 
 /* TEXT STYLING */
 
+h1 {
+  font-weight: 200;
+  color: #260E0E;
+}
+
 h2 {
   text-align: center;
   margin-top: 4%;
 color: #260E0E;
-font-family: fontsMontserratBold;
+font-weight: 400;
   }
+
+h3 {
+  font-weight: 300; 
+  color: #260E0E;
+}
 
   h4 {
     text-align: center;
+    font-weight: 300; 
+    color: #260E0E;
   }
 
 
@@ -38,22 +50,8 @@ ol {
 }
 
 
-/**FONTS**/
 
-@font-face {
-  font-family: fontsLibre;
-  src: url(fonts/librebaskerville/librebaskerville-bold-webfont.woff);
-}
 
-@font-face {
-  font-family: fontsMontserrat;
-  src: url(fonts/montserrat/montserrat-extralight-webfont.woff);
-}
-
-@font-face {
-  font-family: fontsMontserratBold;
-  src: url(fonts/montserrat/montserrat-light-webfont.woff);
-}
 
 /* ÅTERKOMMANDE ELEMENT */
 
@@ -84,12 +82,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255, 0.4); 
-    /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); 
-    background-size: 100vw;
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+    font-weight: 300;
+    color: #260E0E;
 }
 
 /* BODY ON SCREEN SMALLER THAN 800px */
@@ -121,12 +115,6 @@ body {
   background-color: rgb(255, 255, 255);
   position: fixed;
   z-index: 1;
-  /* background-image: url("img/pigsy-jinx-cqq8suQ7PEQ-unsplash.jpg"); 
-background-size: 100%;
-  background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover; */
 }
 
 /* En signatur-logga som jag inte har med nu..  
@@ -138,15 +126,6 @@ background-size: cover; */
 } */
 
 
-/*
-.page_title {
-  font-weight: bolder;
-  margin-left: 20px;
-  font-size: 18px;
-}
-*/
-
-
 
 /* NYA NAVBAREN! */
 
@@ -155,7 +134,7 @@ background-size: cover; */
   overflow: hidden;
   margin-right: 20px;
   float: right;
-  font-weight: lighter;
+  font-weight: light;
   color: #260E0E;
 }
 
@@ -171,7 +150,8 @@ background-size: cover; */
 
 .topnav a:hover {
   text-decoration: overline;
-  color: black;
+  color: #260E0E;
+  font-weight: 400;
 }
 
 
@@ -182,7 +162,7 @@ background-size: cover; */
 
 #pagetitle:hover {
 text-decoration: none;
-font-weight: 1000;
+font-weight: 400;
 }
 
 
@@ -239,10 +219,6 @@ Show the link that contains should open and close the topnav (.icon) */
  margin-top: 130px;
 padding: 10%; 
 scroll-margin-top: 100px;
-}
-
-.Hello h1 {
-  color: #260E0E
 }
 
 .welcome h3 {
@@ -327,8 +303,8 @@ button {
   outline: none;
   font-size: 1rem;
   background-color: #BFB6AE;
-  color: black;
-  font-weight: bold;
+  color: #260E0E;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -352,12 +328,19 @@ button:hover {
   text-align: left;
   height: 60px;
   vertical-align: text-top;
+  font-weight: 500;
 }
 
 #uxTable td {
   text-align: left;
   height: 60px;
   vertical-align: text-top;
+}
+
+
+
+.tableanswer {
+  font-weight: 400;
 }
 
 
@@ -372,9 +355,8 @@ button:hover {
   border-color: #BFB6AE;
   outline: none;
   font-size: 1rem;
-  
-  color: black;
-  font-weight: bold;
+  color: #260E0E;
+  font-weight: 400;
   cursor: pointer;
 
   display: flex;
@@ -456,7 +438,6 @@ button, #contactLinkedIn{
 /**PROJECTS SECTION **/
 
 .projects {
-  margin: 4% 0% 4% 0%;
   background-color: rgb(255, 255, 255, 0.4);
 
   scroll-margin-top: 100px;
@@ -541,7 +522,7 @@ opacity: 0.3;
 /**CONTACT SECTION**/
 
 .contactMe {
-  min-height: 75vh;
+  min-height: 85vh;
   padding: 2%;
   background-color: #F6F5F4;
 }
@@ -568,7 +549,7 @@ opacity: 0.3;
   width: 250px;
   height: 50px;
   padding: 2%;
-  color: black;
+  color: #260E0E;
 }
 
 
@@ -586,7 +567,7 @@ footer {
 
 .footerText {
     font-size: small;
-    font-weight: lighter;
+    font-weight: light;
     padding: 0%;
     text-align: center;
 }
@@ -595,6 +576,11 @@ footer {
 
 
 /* FRISQ PROJECT PAGE!!! */ 
+/*
+#54BFAC
+#49A695
+#65BFAF 
+*/
 
 .frisqContainer {
 display: flex;
@@ -632,10 +618,3 @@ width: 100%;
 #what3 {
   background-color: #EAEAEA;
 }
-
-
-/*
-#54BFAC
-#49A695
-#65BFAF 
-*/
